@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+	<br />
+	<!--BUTTON CODE <- AND ->-->
+<div class="nextprev">
+<ul>
+	<li class="prev"><a href="C:/Users/SWATHI/Desktop/SORTING_final/HOME/project.html"><span></span></a></li>
+	<li class="next"><a href="C:/Users/SWATHI/Desktop/SORTING_final/QuickSort/index.html"><span></span></a></li> 
+	
+</ul>
+</div>
+<!--BUTTON CODE <- AND ->-->
+<section class="head">Merge Sort</section>
+	
+<canvas id="Canvas"></canvas>
+<div style="text-align: center;color:#6b5b95;font-size:30px;font-family: Lucida Console, Courier New, monospace;">
+	<label for="fname1">
+		Array:
+	</label>
+	<input type="text" id="fname1" name="fname1" style="text-align: center;color:#6f459e;background-color:white;
+	font-size:30px;font-family: Lucida Console, Courier New, monospace;" 
+	onkeypress="return onlyNumberKeySpace(event)" autofocus for (var i = 0; i < inputText.length; i++) {
+	// Return a value from 1 to 100 (both inclusive)
+
+
+
+
+
+
+	var value = pages[i];
+
+	// Creating element div
+	var array_ele = document.createElement("div");
+
+	// Adding class 'block' to div
+	array_ele.classList.add("block");
+
+	// Adding style to div
+	array_ele.style.height = `${value * 3}px`;
+	array_ele.style.transform = `translate(${i * 30}px)`;
+
+	// Creating label element for displaying
+	// size of particular block
+	var array_ele_label = document.createElement("label");
+	array_ele_label.classList.add("block_id");
+	array_ele_label.innerText = value;
+
+	// Appending created elements to index.html
+	array_ele.appendChild(array_ele_label);
+	container.appendChild(array_ele);
+}>
+	<br /><br />
+
+<!-- "Generate New Array" button -->
+<button class="btn1"
+		onclick="generatearray()" id="Button1" >
+	Generate New Array</button>
+	
+<!-- "Insertion Sort" button -->
+<button class="btn2"
+		onclick="performer(),disable()"
+		id="Button2" >
+	Merge Sort</button>
+	
+
+<!-- "Reset" button -->
+<button class="btn3"
+		onclick="Reset(),disable()"
+		id="Button3" >
+	Reset</button>
+	
+
+
+<button class="btn4"
+		onclick="TimeComplexity()"
+		id="Button4" >
+	TimeComplexity</button>
+	
+
+<button class="btn5"
+		onclick="SpaceComplexity()"
+		id="Button5" >
+	SpaceComplexity</button>
+	</div>	
+<BR><div id="text1" style="text-align: center;color:#6b5b95;font-size:30px;font-family: Lucida Console, Courier New, monospace;"></div>
+<div id="text2" style="text-align: center;color:#6b5b95;font-size:30px;font-family: Lucida Console, Courier New, monospace;"></div>
+<div id="text3" style="text-align: center;color:#6b5b95;font-size:30px;font-family: Lucida Console, Courier New, monospace;"></div>
+<div id="text4" style="text-align: center;color:#6b5b95;font-size:30px;font-family: Lucida Console, Courier New, monospace;"></div>
+<script>function onlyNumberKeySpace(evt) {
+              
+            // Only ASCII character in that range allowed
+            var ASCIICode = (evt.which) ? evt.which : evt.keyCode
+            if (ASCIICode != 32 && (ASCIICode < 48 || ASCIICode > 57) )
+                return false;
+            return true;
+        }
+</script>
+
+
+	
+	
+	<br />
+	<br />
+	<div id="text"></div>
+	</div>
+
+	<script src="mergeSort.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,368 @@
+.mySlides {
+display: none;
+}
+body {
+background-color: rgb(0, 0, 0);
+font-family: Verdana, sans-serif;
+}
+/*-----------------------------------------#212131--------------------------button code----   <-   ->   ------*/
+.nextprev ul{
+	position:absolute;
+	top:10%;
+	left:90%;
+	transform:translate(-50%,-50%);
+	margin:0;
+	padding:0;
+	display:flex;
+}
+.nextprev ul li{
+	list-style:none; 
+	width:80px;
+	height:80px;
+	background:#262626;
+	margin:0 10px;
+border-radius:50%;
+transition:0.5s;
+	
+}
+.nextprev ul li:hover{
+	background:#0070ff;
+}
+.nextprev ul li span{
+	position: absolute;
+	width:20px;
+	height:20px;
+	border:4px solid #fff;
+	transition:0.5s;/*run it*/
+}
+.nextprev ul li.next span{
+	top: 50%;
+	right:20%;
+	transform:translateY(-50%)rotate(-45deg);/*diamond 1 2 3 4....4th one boxline disappears run it*/
+	border-left:none;
+	border-top:none;
+}
+.nextprev ul li.next:hover span{
+	right:16%;/*runit added after ul li.next:hover span:before{*/
+}
+.nextprev ul li.next span:before{
+	content:'';
+position:absolute;
+width:38px;
+height:4px;
+background:#fff;/*run*/          /*run*/
+transform-origin:right;
+transform:rotate(45deg) translate(0px,25px)scaleX(0);  /*run*/
+transition:0.5s;
+}
+.nextprev ul li.next:hover span:before{
+transform:rotate(45deg) translate(0px,25px)scaleX(1);   /*run*/
+}
+
+/*copy paste for prev and run it change right:20% toleft and border left to rght ,and top to bottom*/
+.nextprev ul li.prev span{
+	top: 50%;
+	left:20%;
+	transform:translateY(-50%)rotate(-45deg);
+border-right:none;
+border-bottom:none;
+}
+.nextprev ul li.prev:hover span{
+left:16%;/*runit added after ul li.next:hover span:before{*/
+}
+.nextprev ul li.prev span:before{
+	content:'';
+position:absolute;
+width:38px;
+height:4px;
+background:#fff;/*run*/          /*run*/
+transform-origin:left;/*chaned to left line align to this <*/
+transform:rotate(45deg) translate(-2px,-1px)scaleX(0);  /*run*/
+transition:0.5s;
+}
+.nextprev ul li.prev:hover span:before{
+transform:rotate(45deg) translate(-2px,-1px)scaleX(1);   /*run*/
+}
+/*-------------------------------------------------------------------till here button code----   <-   ->   ------*/
+.head {
+margin-top: 20px;
+margin-right: 20vw;
+margin-left: 20vw;
+text-align: center;
+font-size: 30px;
+background-color:#48AAAD;
+color: white;
+border-radius:19px;
+font-weight: bolder;
+}
+.header {
+	font-size: 20px;
+	text-align: center;
+}
+
+.data-container {
+width: 600px;
+color: aliceblue;
+height: 364px;
+position: relative;
+margin: 0 auto;
+}
+.bar {
+width: 28px;
+position: absolute;
+left: 0;
+bottom: 0;
+background-color: rgb(0, 183, 255);
+transition: 0.2s all ease;
+}
+.bar__id {
+position: absolute;
+top: -24px;
+width: 100%;
+text-align: center;
+}
+
+.btn1
+{
+padding: 12px;
+font-weight: bolder;
+background-color: #48AAAD;
+border-radius: 10px;
+color: white;
+font-size: 16px;
+border: white;
+margin-top: 1vw;
+margin-right: 1vw;
+}
+.btn2
+{
+padding: 12px;
+font-weight: bolder;
+background-color: #48AAAD;
+border-radius: 10px;
+color: white;
+font-size: 16px;
+border: white
+}
+
+.btn3
+{
+padding: 12px;
+font-weight: bolder;
+background-color: #48AAAD;
+border-radius: 10px;
+color: white;
+font-size: 16px;
+border: white
+}
+
+.btn4
+{
+padding: 12px;
+font-weight: bolder;
+background-color: #48AAAD;
+border-radius: 10px;
+color: white;
+font-size: 16px;
+border: white
+}
+.btn5
+{
+padding: 12px;
+font-weight: bolder;
+background-color: #48AAAD;
+border-radius: 10px;
+color: white;
+font-size: 16px;
+border: white
+}
+#ele {
+text-align: center;
+height: 35px;
+}
+
+
+/* --- IMPROVED STYLING --- */
+/* Fix the next/prev buttons to be fully clickable */
+.nextprev ul li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+/* Improve the visualization container */
+#array {
+    background-color: #e0f7fa !important;
+    height: 450px !important;
+    width: 800px !important;
+    border-radius: 15px !important;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+    border: 2px solid #b2ebf2 !important;
+}
+
+/* Improve the main headings */
+.head {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2) !important;
+}
+
+/* Improve the bottom section */
+#ele {
+    margin-top: 20px;
+}
+
+/* --- PREMIUM PROFESSIONAL REDESIGN --- */
+
+/* Global Body Styling */
+body * {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+body {
+    background-color: #f0f4f8 !important; /* Soft, professional blue-grey background */
+    color: #333 !important;
+}
+
+/* Header Styling */
+.head {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    color: white !important;
+    border-radius: 12px !important;
+    padding: 15px 30px !important;
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+    border: none !important;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700 !important;
+}
+
+/* Array Visualization Container */
+#array {
+    background-color: #ffffff !important;
+    height: 400px !important;
+    width: 85% !important;
+    max-width: 900px !important;
+    border-radius: 16px !important;
+    box-shadow: 0 15px 35px rgba(50,50,93,0.1), 0 5px 15px rgba(0,0,0,0.07) !important;
+    border: 1px solid #e1e5eb !important;
+    margin: 0 auto 40px auto !important;
+    position: relative !important;
+}
+
+/* Array Blocks (Bars) */
+.block {
+    background: linear-gradient(180deg, #6b5b95 0%, #4a3b69 100%) !important;
+    border-radius: 6px 6px 0 0 !important;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1) !important;
+    margin: 0 2px !important; /* Add tiny gap between bars */
+    width: 35px !important; /* slightly wider */
+}
+
+/* Input Field */
+input[type="text"] {
+    background-color: #ffffff !important;
+    color: #333 !important;
+    border: 2px solid #cbd5e1 !important;
+    border-radius: 8px !important;
+    padding: 10px 20px !important;
+    font-size: 24px !important;
+    font-family: 'Courier New', Courier, monospace !important;
+    transition: all 0.3s ease !important;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.05) !important;
+    width: 50% !important;
+    min-width: 300px !important;
+}
+
+input[type="text"]:focus {
+    border-color: #764ba2 !important;
+    outline: none !important;
+    box-shadow: 0 0 0 3px rgba(118, 75, 162, 0.2) !important;
+}
+
+/* Button Container */
+div[style*="margin: auto; width: fit-content"] {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 15px !important;
+    width: 90% !important;
+    margin: 0 auto !important;
+    padding: 20px !important;
+    background: transparent !important;
+}
+
+/* All Buttons */
+button {
+    background: linear-gradient(135deg, #6f459e 0%, #512b7a 100%) !important;
+    color: white !important;
+    padding: 12px 24px !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.5px !important;
+    border: none !important;
+    cursor: pointer !important;
+    transition: transform 0.2s, box-shadow 0.2s !important;
+    box-shadow: 0 4px 6px rgba(111, 69, 158, 0.25) !important;
+    margin: 0 !important;
+}
+
+button:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 7px 14px rgba(111, 69, 158, 0.35) !important;
+    background: linear-gradient(135deg, #7c4db3 0%, #5d318c 100%) !important;
+}
+
+button:disabled {
+    background: #cbd5e1 !important;
+    color: #94a3b8 !important;
+    cursor: not-allowed !important;
+    transform: none !important;
+    box-shadow: none !important;
+}
+
+/* Text Outputs (Time/Space Complexity) */
+div[id^="text"] {
+    font-family: 'Inter', 'Segoe UI', sans-serif !important;
+    font-size: 22px !important;
+    color: #475569 !important;
+    margin: 10px 10px !important;
+    font-weight: 500 !important;
+    background: white !important;
+    padding: 10px 20px !important;
+    border-radius: 8px !important;
+    display: inline-block !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05) !important;
+}
+
+/* Navigation Buttons */
+.nextprev ul li {
+    background: white !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1) !important;
+    border: 2px solid #e1e5eb !important;
+}
+
+.nextprev ul li span {
+    border-color: #6f459e !important;
+    background: transparent !important;
+}
+
+.nextprev ul li.next span:before, .nextprev ul li.prev span:before {
+    background: #6f459e !important;
+}
+
+.nextprev ul li:hover {
+    background: #6f459e !important;
+    border-color: #6f459e !important;
+}
+
+.nextprev ul li:hover span {
+    border-color: white !important;
+}
+
+.nextprev ul li:hover span:before {
+    background: white !important;
+}

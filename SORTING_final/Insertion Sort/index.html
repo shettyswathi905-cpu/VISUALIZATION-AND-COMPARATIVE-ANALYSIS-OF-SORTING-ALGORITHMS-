@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<!-- head -->
+<head>
+	<!-- title -->
+	<title>Insertion Sort </title>
+	<!-- linking style.css -->
+	<link href="style.css" rel="stylesheet" />
+</head>
+
+<!-- body -->
+<body>
+<!--BUTTON CODE <- AND ->-->
+<div class="nextprev">
+<ul>
+	<!--<li class="prev"><a href="C:/Users/SWATHI/Desktop/SORTING_final/Selection Sort/index.html"><span></span></a></li>-->
+	<li class="prev"><a href="C:/Users/SWATHI/Desktop/SORTING_final/HOME/project.html"><span></span></a></li>
+	<li class="next"><a href="C:/Users/SWATHI/Desktop/SORTING_final/Exchange Sort/index.html"><span></span></a></li> 
+	
+</ul>
+</div>
+<!--BUTTON CODE <- AND ->-->
+	<section class="head">Insertion Sort</section>
+	<section class="data-container"></section>
+	<section id="ele"></section>
+	<div style="margin: auto; width: fit-content;">
+
+<div style="text-align: center;color:#6f459e;font-size:30px;font-family: Lucida Console, Courier New, monospace;">
+	<label for="fname1">Array:</label>
+	
+		<input type="text" id="fname1" name="fname1" style="text-align: center;color:#6f459e;
+	font-size:30px;font-family: Lucida Console, Courier New, monospace;" onkeypress="return onlyNumberKeySpace(event)" autofocus>
+	
+	
+	<br /><br />
+	
+	<!-- "Generate New Array" button -->
+<button class="btn1"
+		onclick="generate()" id="Button1" >
+	Generate New Array</button>
+	
+<!-- "Insertion Sort" button -->
+<button class="btn2"
+		onclick="InsertionSort(),disable()"
+		id="Button2" >
+	Insertion Sort</button>
+	
+
+<!-- "Reset" button -->
+<button class="btn3"
+		onclick="Reset(),disable()"
+		id="Button3" >
+	Reset</button>
+	
+
+
+<button class="btn4"
+		onclick="TimeComplexity()"
+		id="Button4" >
+	TimeComplexity</button>
+	
+
+<button class="btn5"
+		onclick="SpaceComplexity()"
+		id="Button5" >
+	SpaceComplexity</button>
+	
+	<br />
+	<br />
+	<div id="text"></div>
+	<div id="text1" style="text-align:right_top;color:#green;font-size:30px;"></div>
+		<div id="text2" style="text-align:right_top;color:#green;font-size:30px;"></div>
+		<div id="text3" style="text-align:right_top;color:#green;font-size:30px;"></div>
+		<div id="text4" style="text-align:right_top;color:#green;font-size:30px;"></div>
+	</div>	
+
+</body>
+<!-- linking index.js -->
+<script>
+        function onlyNumberKeySpace(evt) {
+              
+            // Only ASCII character in that range allowed
+            var ASCIICode = (evt.which) ? evt.which : evt.keyCode
+            if (ASCIICode != 32 && (ASCIICode < 48 || ASCIICode > 57) )
+                return false;
+            return true;
+        }
+</script>
+<script src="index.js"></script>
+</html>

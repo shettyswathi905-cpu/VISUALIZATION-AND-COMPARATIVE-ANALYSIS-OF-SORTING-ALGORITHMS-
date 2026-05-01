@@ -1,0 +1,71 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f4f8;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.head {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 80%;
+    text-align: center;
+    font-size: 28px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: 12px;
+    font-weight: 800;
+    padding: 20px 40px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* We don't have a container for buttons in project.html, they are just loose in body */
+button {
+    background: linear-gradient(135deg, #288ee8 0%, #1a5ca6 100%);
+    padding: 20px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    width: 28%;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    margin: 10px;
+    box-shadow: 0 4px 10px rgba(40, 142, 232, 0.3);
+    transition: transform 0.2s, box-shadow 0.2s, background 0.2s;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #329df0 0%, #1f6abf 100%);
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(40, 142, 232, 0.4);
+}
+
+button#btn12 {
+    background: linear-gradient(135deg, #e53e3e 0%, #c53030 100%);
+    width: 50%;
+    margin-top: 30px;
+    font-size: 20px;
+    padding: 25px;
+    box-shadow: 0 4px 10px rgba(229, 62, 62, 0.3);
+}
+
+button#btn12:hover {
+    background: linear-gradient(135deg, #f56565 0%, #e53e3e 100%);
+    box-shadow: 0 8px 15px rgba(229, 62, 62, 0.4);
+}

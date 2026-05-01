@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head Section -->
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport"
+		content="width=device-width,
+		initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible"
+		content="ie=edge" />
+
+	<!-- title -->
+	<title>Shell Sort Visualizer using JavaScript</title>
+
+	<!-- linking style.css -->
+	<link href="style.css" rel="stylesheet" />
+</head>
+
+<!-- Body Section -->
+
+<body>
+<!--BUTTON CODE <- AND ->-->
+<div class="nextprev">
+<ul>
+	<!--<li class="prev"><a href="file:///C:/final/AA-Home/statpage.html"><span></span></a></li>-->
+	<li class="prev"><a href="C:/Users/SWATHI/Desktop/SORTING_final/HOME/project.html"><span></span></a></li>
+	<li class="next"><a href="C:/Users/SWATHI/Desktop/SORTING_final/bucket sort/index.html"><span></span></a></li> 
+	
+</ul>
+</div>
+<!--BUTTON CODE <- AND ->-->
+	<section class="head" >Shell Sort</section>
+	<section class="data-container"></section>
+	<section id="ele"></section>
+	<div style="margin: auto; width: fit-content">
+
+
+<div style="text-align: center;color:#ED7014;font-size:30px;font-family: Lucida Console, Courier New, monospace;">
+	<label for="fname1">
+		Array:
+	</label>
+	<input type="text" id="fname1" name="fname1" style="text-align: center;color:#ED7014;font-size:30px;font-family: Lucida Console, Courier New, monospace;" onkeypress="return onlyNumberKeySpace(event)" autofocus>
+	<br /><br />
+		<!-- "Generate New Array" button -->
+		<button class="btn1" onclick="generate()" id="Button1">
+			Generate New Array
+		</button>
+
+		<!-- "Shell Sort" button -->
+		<button class="btn2" onclick="ShellSort(),disable()"
+				id="Button2">Shell Sort</button>
+	
+<!-- "Reset" button -->
+<button class="btn3"
+		onclick="Reset(),disable()"
+		id="Button3" >
+	Reset</button>
+	
+
+
+<button class="btn4"
+		onclick="TimeComplexity()"
+		id="Button4" >
+	TimeComplexity</button>
+	
+
+<button class="btn5"
+		onclick="SpaceComplexity()"
+		id="Button5" >
+	SpaceComplexity</button>
+	</div>	
+<BR>
+<div id="text1" style="text-align: center;color:#ED7014;font-size:30px;font-family: Lucida Console, Courier New, monospace;"></div>
+<div id="text2" style="text-align: center;color:#ED7014;font-size:30px;font-family: Lucida Console, Courier New, monospace;"></div>
+<div id="text3" style="text-align: center;color:#ED7014;font-size:30px;font-family: Lucida Console, Courier New, monospace;"></div>
+<div id="text4" style="text-align: center;color:#ED7014;font-size:30px;font-family: Lucida Console, Courier New, monospace;"></div>
+<script>
+        function onlyNumberKeySpace(evt) {
+              
+            // Only ASCII character in that range allowed
+            var ASCIICode = (evt.which) ? evt.which : evt.keyCode
+            if (ASCIICode != 32 && (ASCIICode < 48 || ASCIICode > 57) )
+                return false;
+            return true;
+        }
+</script>
+
+	<!-- linking script.js -->
+	<script src="script.js"></script>
+</body>
+</html>
